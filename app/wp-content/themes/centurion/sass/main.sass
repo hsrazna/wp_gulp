@@ -1,0 +1,193 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "style"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	// line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+
+	background: #fff
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+//************* block2 ***************************
+.ah-block2,.ah-block4,.ah-block5
+	margin: 30px 0px
+	text-align: center
+	
+.ah-block2-span
+	display: inline-block
+	font-family: "GeometriaLight", sans-serif
+	color: #003300
+	font-size: 36px
+	letter-spacing: 0.02em
+	text-transform: uppercase
+.ah-b2-icon1
+	margin: 0 auto
+	margin-bottom: 25px
+.ah-block2-text
+	display: block
+	font-family: "SegoeUIRegular", sans-serif
+	text-align: left
+	color: #656665;
+	font-size: 20px;
+	line-height: 18px;
+.ah-block2-wrap
+	padding: 0 40px
+.ah-block4-span, .ah-block4-text
+	display: block
+	font-family: "SegoeUIRegular", sans-serif
+	color: #656665
+	font-size: 20px
+	text-align: left
+.ah-block4-span
+	margin-top: 30px
+//************* block5 ***************************
+.ah-block5-wrapp
+	background: #eee7d5
+	height: auto
+	border-radius: 40px
+	box-shadow: 0 2px 50.4px 19.6px rgba(39, 70, 19, 0.39)
+	padding: 55px 25px
+	margin-bottom: 40px
+.ah-block5-imgbox1
+	display: inline-block
+	position: relative
+	margin: 33px 40px
+.ah-img1, .ah-img2
+	display: inline-block
+	padding: 7px 0px
+.ah-img1
+	margin-right: 0px
+.ah-imgpc1
+	position: relative
+	&::before
+		position: absolute
+		content: ""
+		background: url(../img/ah-arr_r.png)
+		background: none
+		width: 76px
+		height: 28px
+		right: -40%
+		top: 35%
+	&::after
+		position: absolute
+		content: ""
+		background: url(../img/ah-b5_a1.png)
+		background: none
+		width: 184px
+		height: 19px
+		left: 0
+		top: -25%
+.ah-imgpc2
+	position: relative
+	&::after
+		position: absolute
+		content: ""
+		background: url(../img/ah-b5_a2.png)
+		background: none
+		width: 210px
+		height: 48px
+		left: 0%
+		top: -40%
+.ah-imgpc3
+	position: relative
+	&::before
+		position: absolute
+		content: ""
+		background: url(../img/ah-arr_b.png)
+		width: 28px
+		height: 76px
+		right: 0
+		bottom: -65%
+	&::after
+		position: absolute
+		content: ""
+		background: url(../img/ah-b5_a3.png)
+		width: 79px
+		height: 15px
+		left: 0
+		top: -25%
+.ah-imgpc4
+	position: relative
+	&::before
+		position: absolute
+		content: ""
+		background: url(../img/ah-arr_t.png)
+		width: 28px
+		height: 76px
+		right: 45%
+		top: -50%
+	&::after
+		position: absolute
+		content: ""
+		background: url(../img/ah-b5_a4.png)
+		width: 236px
+		height: 19px
+		left: 0
+		bottom: -25%
+.ah-imgpc5
+	position: relative
+	&::before
+		position: absolute
+		content: ""
+		background: url(../img/ah-arr_l.png)
+		width: 76px
+		height: 28px
+		left: -85%
+		bottom: 42%
+	&::after
+		position: absolute
+		content: ""
+		background: url(../img/ah-b5_a5.png)
+		width: 175px
+		height: 17px
+		left: -75%
+		top: -25%
+.ah-imgpc6
+	position: relative
+	&::after
+		position: absolute
+		content: ""
+		background: url(../img/ah-b5_a6.png)
+		width: 180px
+		height: 48px
+		left: -20%
+		top: -40%
+
+@import "media" // Всегда в конце
+@import "media2" // Всегда в конце
